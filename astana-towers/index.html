@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="theme-color" content="#FFD374" />
+	<title>Astana Tower</title>
+	<link rel="icon" href="/assets/images/icon.svg" />
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css.map">
+	<link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/assets/css/animate.min.css">
+	<link rel="stylesheet" href="/assets/css/docs.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<div class="header__burger burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="header__logo">
+					<a href="/" class="header__nav-link">
+						<img src="/assets/images/logo.svg" title="Astana Tower" alt="Astana Tower" />
+					</a>
+				</div>
+				<ul class="header__nav">
+					<li class="header__nav-item">
+						<a href="#suggestions" class="header__nav-link header__nav-link_smooth">Аренда</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="/news" class="header__nav-link">Новости</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#contacts" class="header__nav-link header__nav-link_smooth">Контакты</a>
+					</li>
+				</ul>
+				<ul class="header__languages" id="languagesDropdown" tabindex="-1">
+					<li class="header__nav-item">
+						<p class="header__nav-link">Ru</p>
+					</li>
+					<li class="header__nav-item">
+						<a href="/en" class="header__nav-link">En</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="/kz" class="header__nav-link">Kz</a>
+					</li>
+				</ul>
+				<button class="header__button button" type="button" data-bs-toggle="modal"
+					data-bs-target="#requestModal">
+					Оставить заявку
+					<img src="/assets/images/arrow.svg" title="Оставить заявку" alt="arrow" />
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="intro" id="intro">
+		<div class="container">
+			<div class="intro__body">
+				<div class="intro__content">
+					<h1 class="intro__title">
+						Astana Tower - бизнес центр А класса
+					</h1>
+					<p class="intro__text">
+						Надежный и стабильный партнер, обеспечивающий гибкий подход к потребностям арендаторов
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="parallaxSky">
+			<img src="/assets/images/intro-sky.png" alt="sky" class="cover-img rellax" data-rellax-speed="-5" />
+		</div>
+		<div id="parallaxTower">
+			<img src="/assets/images/tower.png" alt="tower" class="rellax" data-rellax-speed="3"
+				data-rellax-xs-speed="1" />
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-11 row justify-content-between align-items-center">
+					<div class="w-auto">
+						<h5 class="section__title wow animate__animated animate__fadeInUp">
+							О компании
+						</h5>
+					</div>
+					<div class="col-md-7 about__text wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+						Будучи основанной в 2000 году, компания зарекомендовала себя на рынке недвижимости столицы
+						прогрессивным и опытным игроком, надежным и стабильным партнером, обеспечивающим гибкий подход к
+						потребностям арендаторов бизнес центра. На протяжении более 20 лет мы работаем на рынке
+						коммерческой недвижимости, специализируясь на предоставлении офисных помещений "А" класса,
+						соответствующих высокому уровню технологий международных стандартов.
+					</div>
+				</div>
+				<div class="col-10" style="padding: 30px 0 40px 0;">
+					<div class="about__video" id="video"
+						data-iframe='<iframe width="560" height="315" src="https://www.youtube.com/embed/5JeTZMtWL90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'>
+						<div class="about__poster" id="videoPoster">
+							<img src="/assets/images/bg-video.jpg" title="Astana Tower" alt="Astana Tower" />
+							<button class="about__play" id="videoButton">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<ul class="about__stat">
+						<li class="about__stat-item wow animate__animated animate__fadeInRight" data-wow-delay="0s">
+							<p><span>21 год</span></p>
+							<p>дарим комфорт и безопасность</p>
+						</li>
+						<li class="about__stat-item wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
+							<p><span>24/7</span></p>
+							<p>доступ в офисы</p>
+						</li>
+						<li class="about__stat-item wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+							<p><span>> 500 кв.м </span></p>
+							<p>площадь одного этажа</p>
+						</li>
+						<li class="about__stat-item wow animate__animated animate__fadeInRight" data-wow-delay="0.6s">
+							<p><span>21 этажей</span></p>
+							<p>в бизнес центре</p>
+						</li>
+						<li class="about__stat-item wow animate__animated animate__fadeInRight" data-wow-delay="0.8s">
+							<p><span>12 199,1 кв.м</span></p>
+							<p>общая площадь бизнес центра</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="view" id="view">
+		<div class="view__body">
+			<div class="view__grid" id="viewGrid">
+				<div class="view__tile" title="Север" data-direction="north"></div>
+				<div class="view__tile" title="Восток" data-direction="east"></div>
+				<div class="view__tile" title="Запад" data-direction="west"></div>
+				<div class="view__tile" title="Юг" data-direction="south"></div>
+				<div class="view__map">
+					<div class="" style="background-image: url(/assets/images/topview-1.jpg);"></div>
+					<div class="" style="background-image: url(/assets/images/topview-2.jpg);"></div>
+					<div class="" style="background-image: url(/assets/images/topview-3.jpg);"></div>
+					<div class="" style="background-image: url(/assets/images/topview-4.jpg);"></div>
+				</div>
+			</div>
+		</div>
+		<div class="view__panorama" id="north">
+			<div class="swiper-container view__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide" id="parallaxed1">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container view__preview">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-close" data-close="panorama"></button>
+		</div>
+		<div class="view__panorama" id="east">
+			<div class="swiper-container view__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container view__preview">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-close" data-close="panorama"></button>
+		</div>
+		<div class="view__panorama" id="west">
+			<div class="swiper-container view__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container view__preview">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-close" data-close="panorama"></button>
+		</div>
+		<div class="view__panorama" id="south">
+			<div class="swiper-container view__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container view__preview">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-1.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-2.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+					<div class="swiper-slide">
+						<img src="/assets/images/logo.svg" data-src="/assets/images/panorama-3.jpg" title="Astana Tower"
+							alt="Astana Tower" class="swiper-lazy cover-img" />
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn-close" data-close="panorama"></button>
+		</div>
+	</section>
+
+	<section class="suggestions" id="suggestions">
+		<div class="container">
+			<div class="section__header">
+				<h5 class="section__title wow animate__animated animate__fadeInUp">
+					Наши предложения
+				</h5>
+			</div>
+			<div class="suggestions__grid">
+				<div class="suggestions__item wow animate__animated animate__fadeInLeft" data-wow-duration="1s"
+					data-wow-delay="0s">
+					<a href="#">
+						<div class="suggestions__photo">
+							<img src="/assets/images/suggestion-1.jpg" title="suggestion-1" alt="suggestion-1"
+								class="cover-img" />
+						</div>
+						<div class="suggestions__content">
+							<p class="suggestions__title">
+								Офисы
+								<span class="suggestions__title-icon">
+									<img src="/assets/images/arrow-white.svg" alt="arrow" />
+								</span>
+							</p>
+							<p class="suggestions__text">
+								В структуру комплекса входит фитнес центр «ESIL», общей площадью 1272 кв.м, где
+								имеется
+								полностью укомплектованный тренажерный зал, большой бассейн, SPA-зона и массажные
+								кабинеты.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="suggestions__item wow animate__animated animate__fadeInRight" data-wow-duration="1s"
+					data-wow-delay="0s">
+					<a href="#">
+						<div class="suggestions__photo">
+							<img src="/assets/images/suggestion-2.jpg" title="suggestion-2" alt="suggestion-2"
+								class="cover-img" />
+						</div>
+						<div class="suggestions__content">
+							<p class="suggestions__title">
+								Конференц залы
+								<span class="suggestions__title-icon">
+									<img src="/assets/images/arrow-white.svg" alt="arrow" />
+								</span>
+							</p>
+							<p class="suggestions__text">
+								В структуру комплекса входит фитнес центр «ESIL», общей площадью 1272 кв.м, где
+								имеется
+								полностью укомплектованный тренажерный зал, большой бассейн, SPA-зона и массажные
+								кабинеты.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="suggestions__item wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+					data-wow-delay="0s">
+					<a href="#">
+						<div class="suggestions__photo">
+							<img src="/assets/images/suggestion-3.jpg" title="suggestion-3" alt="suggestion-3"
+								class="cover-img" />
+						</div>
+						<div class="suggestions__content">
+							<p class="suggestions__title">
+								Фитнес центр
+								<span class="suggestions__title-icon">
+									<img src="/assets/images/arrow-white.svg" alt="arrow" />
+								</span>
+							</p>
+							<p class="suggestions__text">
+								В структуру комплекса входит фитнес центр «ESIL», общей площадью 1272 кв.м, где
+								имеется
+								полностью укомплектованный тренажерный зал, большой бассейн, SPA-зона и массажные
+								кабинеты.
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="residents" id="residents">
+		<div class="container">
+			<div class="section__header">
+				<h5 class="section__title wow animate__animated animate__fadeInUp">
+					Резиденты
+				</h5>
+			</div>
+		</div>
+		<div class="container container_lg">
+			<div class="row">
+				<div class="swiper-container residents__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+								 class='cover-img' />">
+								<img src="/assets/images/resident-1.svg" alt="resident-1" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-2.svg" alt="resident-2" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-3.svg" alt="resident-3" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-4.svg" alt="resident-4" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-5.svg" alt="resident-5" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-6.svg" alt="resident-8" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-7.svg" alt="resident-7" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-8.svg" alt="resident-8" class="contain-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-container residents__slider" dir="rtl">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+								 class='cover-img' />">
+								<img src="/assets/images/resident-1.svg" alt="resident-1" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-2.svg" alt="resident-2" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-3.svg" alt="resident-3" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-4.svg" alt="resident-4" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-5.svg" alt="resident-5" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-6.svg" alt="resident-8" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-7.svg" alt="resident-7" class="contain-img" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="residents__item" data-bs-toggle="tooltip" title="<img src='/assets/images/panorama-1.jpg' title='resident-1' alt='resident-1' 
+							 class='cover-img' />">
+								<img src="/assets/images/resident-8.svg" alt="resident-8" class="contain-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="certificate">
+		<div class="container">
+			<div class="row justify-content-center justify-content-md-start">
+				<div class="col-md-4 order-2 order-md-1">
+					<div class="certificate__short">
+						<div class="certificate__short-raiting">
+							71.1%
+						</div>
+						<div class="certificate__short-logo">
+							<img src="/assets/images/breem.svg" title="breeam usa" alt="breeam usa" />
+						</div>
+						<div class="certificate__short-stars">
+							<img src="/assets/images/star-fill.svg" alt="star"
+								class="wow animate__animated animate__pulse" data-wow-delay="0s" />
+							<img src="/assets/images/star-fill.svg" alt="star"
+								class="wow animate__animated animate__pulse" data-wow-delay="0.2s" />
+							<img src="/assets/images/star-fill.svg" alt="star"
+								class="wow animate__animated animate__pulse" data-wow-delay="0.4s" />
+							<img src="/assets/images/star-fill.svg" alt="star"
+								class="wow animate__animated animate__pulse" data-wow-delay="0.6s" />
+							<img src="/assets/images/star-stroke.svg" alt="star"
+								class="wow animate__animated animate__pulse" data-wow-delay="0.8s" />
+						</div>
+						<div class="certificate__short-text">
+							<span>Building Management:</span> Excellent
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 offset-md-1 order-1 order-md-2">
+					<div class="certificate__header">
+						<h5 class="section__title certificate__title wow animate__animated animate__fadeInUp">
+							Сертификат
+						</h5>
+						<p>
+							The assessment process is certified by BRE Global Limited in accordance with the
+							requirements of
+							Scheme Documen cumen
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-5">
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									Bureau Veritas Kazakhstan Industrial
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Licensed Assessor Company
+								</p>
+							</div>
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									Angelina Ten
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Assessor name
+								</p>
+							</div>
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									BAUD0729
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Assessor number
+								</p>
+							</div>
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									Bureau Veritas Kazakhstan Industrial
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Signed on behalf of BRE Global Lt
+								</p>
+							</div>
+						</div>
+						<div class="col-5 offset-1">
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									<img src="/assets/images/sign.svg" alt="sign"
+										style="height: 20px; transform: scale(1.6); transform-origin: left bottom;" />
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Signed on behalf of BRE Global Lt
+								</p>
+							</div>
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									Gavin Dunn
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Director, BREEAM
+								</p>
+							</div>
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									06 Jun 2017
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Date of Issue
+								</p>
+							</div>
+							<div class="certificate__entry">
+								<p class="certificate__value wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0.3s">
+									06 Jun 2018
+								</p>
+								<p class="certificate__key wow animate__animated animate__fadeInLeft"
+									data-wow-duration="1s" data-wow-delay="0s">
+									Valid until
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blog">
+		<div class="container">
+			<div class="section__header">
+				<h5 class="section__title wow animate__animated animate__fadeInUp">
+					Для СМИ
+				</h5>
+				<a href="#">
+					Все новости
+					<img src="/assets/images/arrow.svg" alt="arrow" />
+				</a>
+			</div>
+			<div class="blog__body">
+				<div class="blog__main">
+					<div class="blog__article-card article-card">
+						<div class="article-card__photo">
+							<a href="#">
+								<img src="/assets/images/card-1.jpg"
+									title="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									alt="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									class="cover-img" />
+							</a>
+						</div>
+						<div class="article-card__content">
+							<a href="#">
+								<h5 class="article-card__title">
+									Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает
+								</h5>
+							</a>
+							<p class="article-card__text">
+								Также как синтетическое тестирование предопределяет высокую востребованность поэтапного
+								и последовательного развития общества.
+							</p>
+							<p class="article-card__date">
+								30.01.21
+							</p>
+						</div>
+					</div>
+					<div class="blog__article-card article-card">
+						<div class="article-card__photo">
+							<a href="#">
+								<img src="/assets/images/card-2.jpg"
+									title="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									alt="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									class="cover-img" />
+							</a>
+						</div>
+						<div class="article-card__content">
+							<a href="#">
+								<h5 class="article-card__title">
+									Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает
+								</h5>
+							</a>
+							<p class="article-card__text">
+								Также как синтетическое тестирование предопределяет высокую востребованность поэтапного
+								и последовательного развития общества.
+							</p>
+							<p class="article-card__date">
+								30.01.21
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="blog__recent">
+					<div class="blog__article-card article-card article-card_small">
+						<div class="article-card__photo">
+							<a href="#">
+								<img src="/assets/images/card-3.jpg"
+									title="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									alt="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									class="cover-img" />
+							</a>
+						</div>
+						<div class="article-card__content">
+							<a href="#">
+								<h5 class="article-card__title">
+									Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает
+								</h5>
+							</a>
+							<p class="article-card__date">
+								30.01.21
+							</p>
+						</div>
+					</div>
+					<div class="blog__article-card article-card article-card_small">
+						<div class="article-card__photo">
+							<a href="#">
+								<img src="/assets/images/card-4.jpg"
+									title="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									alt="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									class="cover-img" />
+							</a>
+						</div>
+						<div class="article-card__content">
+							<a href="#">
+								<h5 class="article-card__title">
+									Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает
+								</h5>
+							</a>
+							<p class="article-card__date">
+								30.01.21
+							</p>
+						</div>
+					</div>
+					<div class="blog__article-card article-card article-card_small">
+						<div class="article-card__photo">
+							<a href="#">
+								<img src="/assets/images/card-5.jpg"
+									title="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									alt="Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает"
+									class="cover-img" />
+							</a>
+						</div>
+						<div class="article-card__content">
+							<a href="#">
+								<h5 class="article-card__title">
+									Финансовый мир очнулся: светлый лик правового взаимодействия обнадёживает
+								</h5>
+							</a>
+							<p class="article-card__date">
+								30.01.21
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="consultation" id="consultation">
+		<div class="container">
+			<div class="section__header section__header_center" style="margin-bottom: 30px;">
+				<h5 class="section__title consultation__title wow animate__animated animate__fadeInUp">
+					БУДЕМ РАДЫ <br> ПРОКОНСУЛЬТИРОВАТЬ ВАС!
+				</h5>
+			</div>
+			<form action="#" class="request-form ajax-form">
+				<div class="request-form__body">
+					<div class="request-form__field">
+						<input type="text" id="name" name="name" />
+						<label for="name">Ваше имя</label>
+					</div>
+					<div class="request-form__field">
+						<input type="text" id="number" name="number" />
+						<label for="number">Ваш номер</label>
+					</div>
+					<div class="request-form__field">
+						<input type="text" id="date" name="date" data-datepicker="" readonly required />
+						<label for="date">Выбрать дату показа офиса</label>
+						<label for="date">
+							<img src="/assets/images/calendar.svg" alt="календарь" title="Выбрать дату показа офиса" />
+						</label>
+					</div>
+				</div>
+				<div class="request-form__footer">
+					<div class="request-form__agreement">
+						<input type="checkbox" name="agreement" id="agreementFull" />
+
+						<label for="agreementFull">
+							Я даю согласие на обработка моих персональных
+							данных согласно политике конфиденциальности
+						</label>
+					</div>
+					<button class="request-form__button button">
+						Оставить заявку
+						<img src="/assets/images/arrow.svg" title="Оставить заявку" alt="arrow" />
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body" id="contacts">
+				<div class="footer__column">
+					<p>
+						<a href="https://yandex.kz/maps/-/CCUmmCsACA" target="_blank">
+							Республика Казахстан, 010000, г.Нур-Султан, Мкр. Самал 12
+							Время работы: 24/7
+						</a>
+					</p>
+					<p>
+						Показы и консультация: 09:00-18:00
+					</p>
+				</div>
+				<div class="footer__logo">
+					<a href="#">
+						<img src="/assets/images/logo-dark.svg" title="Astana Tower" alt="Astana Tower"
+							class="wow animate__animated animate__zoomIn" />
+					</a>
+				</div>
+				<div class="footer__column">
+					<p>
+						Тел.:
+						<a href="tel:+77172442100">+7 7172 44 21 00</a> (вн.110) <br>
+						<a href="tel:+77757442200">+7 775 744 22 00</a>
+					</p>
+					<p>
+						E-mail:
+						<a href="mailto:sales@tower-astana.kz">sales@tower-astana.kz</a>
+					</p>
+					<div class="footer__socials">
+						<a href="#" target="_blank">
+							<img src="/assets/images/inst.svg" title="#" alt="#" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="/assets/images/wp.svg" title="#" alt="#" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="/assets/images/fb.svg" title="#" alt="#" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__made">
+			<a href="https://attention.kz/" target="_blank">
+				made by <span>ATTENTION</span>
+			</a>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="requestModalLabel">Оставить завяку</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="#" class="request-form ajax-form">
+						<div class="request-form__body">
+							<div class="request-form__field">
+								<input type="text" id="name" name="name" />
+								<label for="name">Ваше имя</label>
+							</div>
+							<div class="request-form__field">
+								<input type="text" id="number" name="number" />
+								<label for="number">Ваш номер</label>
+							</div>
+						</div>
+						<div class="request-form__footer">
+							<div class="request-form__agreement">
+								<input type="checkbox" name="agreement" id="agreementModal" />
+
+								<label for="agreementModal">
+									Я даю согласие на обработка моих персональных
+									данных согласно политике конфиденциальности
+								</label>
+							</div>
+							<button class="button">
+								Оставить заявку
+								<img src="/assets/images/arrow.svg" title="Оставить заявку" alt="arrow" />
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/assets/js/datepicker.min.js"></script>
+	<script src="/assets/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/js/bootstrap.bundle.min.js.map"></script>
+	<script src="/assets/js/swiper-bundle.min.js"></script>
+	<script src="/assets/js/swiper-bundle.min.js.map"></script>
+	<script src="/assets/js/inputmask.min.js"></script>
+	<script src="/assets/js/simpleParallax.min.js"></script>
+	<script src="/assets/js/rellax.min.js"></script>
+	<script src="/assets/js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="/assets/js/script.js"></script>
+</body>
+
+</html>

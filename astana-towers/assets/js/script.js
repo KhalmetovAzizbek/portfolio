@@ -208,7 +208,7 @@ const rellax = new Rellax('.rellax');
 
 const parallaxImages = document.querySelectorAll('.suggestions__photo > img, .article-card__photo > a > img');
 new simpleParallax(parallaxImages, {
-	scale: 1.3
+	scale: 1.2
 });
 
 // Bootstrap tooltip

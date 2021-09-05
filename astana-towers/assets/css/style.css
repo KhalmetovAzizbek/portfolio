@@ -108,6 +108,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   width: 100%;
+  background-color: #EDEDED;
 }
 
 body.lock {
@@ -117,7 +118,6 @@ body.lock {
 
 section {
   padding: 40px 0;
-  background-color: #FFFFFF;
 }
 
 .section__header {
@@ -160,7 +160,6 @@ section {
   font-weight: 500;
   line-height: 1.2;
   white-space: nowrap;
-  margin-left: 30px;
 }
 
 .button {
@@ -317,7 +316,7 @@ section {
   transform: translateY(-60%) rotate(45deg);
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #F3F3F3;
   border-top: none;
   border-left: none;
   cursor: pointer;
@@ -441,6 +440,10 @@ section {
   height: 120%;
 }
 
+.about {
+  background: url(../images/bg-noise.png) center/cover repeat;
+}
+
 .about__text {
   font-size: clamp(12px, calc(8.8px + 1vw), 16px);
   line-height: 1.4;
@@ -542,13 +545,18 @@ section {
 .about__stat {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
 
 .about__stat-item {
-  flex: 1 0 auto;
+  flex: 1 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 0 15px;
 }
 
@@ -720,6 +728,10 @@ section {
   overflow: hidden;
 }
 
+.suggestions__item > div {
+  height: 100%;
+}
+
 .suggestions__item .simpleParallax {
   height: 100%;
 }
@@ -784,6 +796,19 @@ section {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
+}
+
+.suggestions__photo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  background: linear-gradient(0deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 15%, rgba(26, 26, 26, 0) 100%);
 }
 
 .tooltip.show {
@@ -791,8 +816,10 @@ section {
 }
 
 .tooltip-inner {
-  width: 350px;
-  height: 200px;
+  width: 700px;
+  max-width: 700px;
+  height: 400px;
+  max-height: 400px;
   padding: 0;
   overflow: hidden;
   border-radius: 5px;
@@ -907,6 +934,10 @@ section {
   padding-top: 5px;
 }
 
+.blog {
+  background: url(../images/bg-noise.png) center/cover repeat;
+}
+
 .blog__body {
   display: flex;
   justify-content: space-between;
@@ -989,6 +1020,10 @@ section {
   color: #565656;
 }
 
+.consultation {
+  background: url(../images/bg-noise.png) center/cover repeat;
+}
+
 .consultation__title {
   font-size: clamp(20px, calc(16.8px + 1vw), 30px);
 }
@@ -1039,6 +1074,7 @@ section {
   width: 100%;
   padding: 10px 15px;
   transition: border-bottom 0.5s ease 0s;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #C4C4C4;
   font-size: clamp(12px, calc(8.8px + 1vw), 16px);
@@ -1109,6 +1145,7 @@ section {
 .request-form__agreement label {
   font-size: clamp(10px, calc(6.8px + 1vw), 14px);
   font-weight: 300;
+  cursor: pointer;
 }
 
 .request-form__button {
@@ -1118,6 +1155,7 @@ section {
 
 .footer {
   padding-top: 40px;
+  background: url(../images/bg-noise.png) center/cover repeat;
 }
 
 .footer__body {
@@ -1128,7 +1166,7 @@ section {
 }
 
 .footer__body > div {
-  flex: 0 1 280px;
+  flex: 0 1 320px;
   padding: 0 15px;
 }
 
@@ -1142,12 +1180,15 @@ section {
 }
 
 .footer__logo {
+  flex: 0 1 280px;
   text-align: center;
 }
 
 .footer__logo img {
   width: 140px;
   height: 65px;
+  width: 112px;
+  height: 52px;
 }
 
 .footer__socials a:not(:last-child) {
@@ -1370,6 +1411,15 @@ section {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .about__stat-item {
+    flex: 1 0 33%;
+  }
+  .about__stat-item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .intro {
     min-height: 100vh;
@@ -1394,6 +1444,9 @@ section {
 }
 
 @media screen and (max-width: 424px) {
+  .about__stat-item {
+    flex: 1 0 50%;
+  }
   .view__map {
     background: url(../images/topview-1.jpg) -350px center/cover no-repeat;
   }

@@ -138,25 +138,25 @@ if (viewSliders) {
 			slidesPerView: 1,
 			speed: 1000,
 			allowTouchMove: false,
-			preloadImages: false,
-			lazy: {
-				loadOnTransitionStart: false,
-				loadPrevNext: false
-			},
-			watchSlidesProgress: true,
-			watchSlidesVisibility: true,
+			// preloadImages: false,
+			// lazy: {
+			// 	loadOnTransitionStart: false,
+			// 	loadPrevNext: false
+			// },
+			// watchSlidesProgress: true,
+			// watchSlidesVisibility: true,
 			thumbs: {
 				swiper: {
 					el: viewPreviews[index],
 					slidesPerView: 3,
 					allowTouchMove: false,
-					preloadImages: false,
-					lazy: {
-						loadOnTransitionStart: false,
-						loadPrevNext: false
-					},
-					watchSlidesProgress: true,
-					watchSlidesVisibility: true,
+					// preloadImages: false,
+					// lazy: {
+					// 	loadOnTransitionStart: false,
+					// 	loadPrevNext: false
+					// },
+					// watchSlidesProgress: true,
+					// watchSlidesVisibility: true,
 				}
 			}
 		});
